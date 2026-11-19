@@ -1,0 +1,14 @@
+<section class="hero">
+  <h1>{{ shop.name | escape }}</h1>
+  <p>Synthetic first-test storefront for the WCAG preview flow.</p>
+  <button type="button" class="button" data-action="open-cart">Open cart</button>
+</section>
+
+<div class="product">
+  <h2>Sample product</h2>
+  <p>$34.00</p>
+  <form action="/cart/add" method="post">
+    <input type="hidden" name="id" value="1">
+    <button type="submit" class="button">Add to cart</button>
+  </form>
+</div>

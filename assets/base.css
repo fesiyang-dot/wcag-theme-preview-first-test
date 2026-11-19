@@ -1,0 +1,66 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #5c5c5c;
+  --border: #d8d8d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem;
+}
+
+.site-header__brand {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero p,
+.product p {
+  color: var(--muted);
+}
+
+.button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--text);
+  background: #fff;
+  cursor: pointer;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(22rem, 100%);
+  height: 100%;
+  padding: 1rem;
+  border-left: 1px solid var(--border);
+  background: #fff;
+}
+
+.cart-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-drawer__empty {
+  color: var(--muted);
+}
